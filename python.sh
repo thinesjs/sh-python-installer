@@ -43,11 +43,11 @@ install_python () {
         old_version="0"
     fi
 
-    if [ "$(printf '%s\n' "$new_version" "$old_version" | sort -V | head -n1)" = "$new_version" ]; then
-        echo "You are trying to install an older version than your current version!"
-        echo "Exiting this script!"
-        exit 0
-    fi
+    # if [ "$(printf '%s\n' "$new_version" "$old_version" | sort -V | head -n1)" = "$new_version" ]; then
+    #     echo "You are trying to install an older version than your current version!"
+    #     echo "Exiting this script!"
+    #     exit 0
+    # fi
 
     echo "Your current Python version is: ${old_version}"
 
